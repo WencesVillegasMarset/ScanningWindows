@@ -1,0 +1,26 @@
+OpenCV 3.2
+corpus26000 va a la ruta que busca test
+generar un txt con los nombres de las imagenes enteras
+
+usr/local/lib path de OpenCV
+Comando para compilar scanningwindows:
+
+    
+g++ -L/usr/local/lib -Lusr/include/boost/ -c ./src/Keypoints.cpp ./src/main.cpp ./src/patchClass.cpp ./src/clasificacionExacta.cpp  -lboost_system -lopencv_viz -lopencv_sfm -lboost_filesystem -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_aruco -lopencv_bgsegm -lopencv_bioinspired -lopencv_ccalib -lopencv_dpm -lopencv_freetype -lopencv_fuzzy -lopencv_line_descriptor -lopencv_optflow -lopencv_reg -lopencv_saliency -lopencv_stereo -lopencv_structured_light -lopencv_phase_unwrapping -lopencv_rgbd -lopencv_surface_matching -lopencv_tracking -lopencv_datasets -lopencv_text -lopencv_face -lopencv_plot -lopencv_dnn -lopencv_xfeatures2d -lopencv_shape -lopencv_video -lopencv_ximgproc -lopencv_calib3d -lopencv_features2d -lopencv_flann -lopencv_xobjdetect -lopencv_objdetect -lopencv_ml -lopencv_xphoto -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_photo -lopencv_imgproc -lopencv_core
+
+g++ -L/usr/local/lib -Lusr/include/boost/ -o "ScanningWindows"  ./src/Keypoints.o ./src/main.o ./src/patchClass.o ./src/clasificacionExacta.o -lboost_system -lopencv_viz -lopencv_sfm -lboost_filesystem -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_aruco -lopencv_bgsegm -lopencv_bioinspired -lopencv_ccalib -lopencv_dpm -lopencv_freetype -lopencv_fuzzy -lopencv_line_descriptor -lopencv_optflow -lopencv_reg -lopencv_saliency -lopencv_stereo -lopencv_structured_light -lopencv_phase_unwrapping -lopencv_rgbd -lopencv_surface_matching -lopencv_tracking -lopencv_datasets -lopencv_text -lopencv_face -lopencv_plot -lopencv_dnn -lopencv_xfeatures2d -lopencv_shape -lopencv_video -lopencv_ximgproc -lopencv_calib3d -lopencv_features2d -lopencv_flann -lopencv_xobjdetect -lopencv_objdetect -lopencv_ml -lopencv_xphoto -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_photo -lopencv_imgproc -lopencv_core
+
+g++ -L/usr/local/lib -Lusr/include/boost/ -c ./src/Keypoints.cpp ./src/main.cpp ./src/patchClass.cpp ./src/clasificacionExacta.cpp  -lopencv_core
+
+//comandos con kubuntu wences
+g++ -I/usr/local/include/opencv4 -I/usr/local/lib -I/usr/include/boost/boost_1_67_0/ -c ./src/Keypoints.cpp ./src/main.cpp ./src/patchClass.cpp ./src/clasificacionExacta.cpp  -lboost_system -lopencv_viz -lopencv_sfm -lboost_filesystem -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_aruco -lopencv_bgsegm -lopencv_bioinspired -lopencv_ccalib -lopencv_dpm -lopencv_freetype -lopencv_fuzzy -lopencv_line_descriptor -lopencv_optflow -lopencv_reg -lopencv_saliency -lopencv_stereo -lopencv_structured_light -lopencv_phase_unwrapping -lopencv_rgbd -lopencv_surface_matching -lopencv_tracking -lopencv_datasets -lopencv_text -lopencv_face -lopencv_plot -lopencv_dnn -lopencv_xfeatures2d -lopencv_shape -lopencv_video -lopencv_ximgproc -lopencv_calib3d -lopencv_features2d -lopencv_flann -lopencv_xobjdetect -lopencv_objdetect -lopencv_ml -lopencv_xphoto -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_photo -lopencv_imgproc -lopencv_core
+
+-I/usr/local/include/opencv4 -I/usr/local/lib -I/usr/include/boost/boost_1_67_0/
+
+g++ -I/usr/local/include/opencv4 -I/usr/local/lib -I/usr/include/boost/boost_1_67_0/ -o "ScanningWindows"  ./src/Keypoints.o ./src/main.o ./src/patchClass.o ./src/clasificacionExacta.o -lboost_system -lopencv_viz -lopencv_sfm -lboost_filesystem -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_aruco -lopencv_bgsegm -lopencv_bioinspired -lopencv_ccalib -lopencv_dpm -lopencv_freetype -lopencv_fuzzy -lopencv_line_descriptor -lopencv_optflow -lopencv_reg -lopencv_saliency -lopencv_stereo -lopencv_structured_light -lopencv_phase_unwrapping -lopencv_rgbd -lopencv_surface_matching -lopencv_tracking -lopencv_datasets -lopencv_text -lopencv_face -lopencv_plot -lopencv_dnn -lopencv_xfeatures2d -lopencv_shape -lopencv_video -lopencv_ximgproc -lopencv_calib3d -lopencv_features2d -lopencv_flann -lopencv_xobjdetect -lopencv_objdetect -lopencv_ml -lopencv_xphoto -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_photo -lopencv_imgproc -lopencv_core
+
+
+
+
+g++ -I/usr/local/include/opencv4 -L/usr/local/lib -L/usr/include/boost/ -L/usr/lib/x86_64-linux-gnu/ -o "ScanningWindows"  ./src/Keypoints.o ./src/main.o ./src/patchClass.o ./src/clasificacionExacta.o -lboost_system -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_aruco -lopencv_bgsegm -lopencv_bioinspired -lopencv_ccalib -lopencv_dpm -lopencv_freetype -lopencv_fuzzy -lopencv_line_descriptor -lopencv_optflow -lopencv_reg -lopencv_saliency -lopencv_stereo -lopencv_structured_light -lopencv_phase_unwrapping -lopencv_rgbd -lopencv_surface_matching -lopencv_tracking -lopencv_datasets -lopencv_text -lopencv_face -lopencv_plot -lopencv_dnn -lopencv_xfeatures2d -lopencv_shape -lopencv_video -lopencv_ximgproc -lopencv_calib3d -lopencv_features2d -lopencv_flann -lopencv_xobjdetect -lopencv_objdetect -lopencv_ml -lopencv_xphoto -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_photo -lopencv_imgproc -lopencv_core
+para instalar boost necesitamos sudo apt-get install libboost-all-dev
